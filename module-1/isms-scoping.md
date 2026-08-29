@@ -60,13 +60,26 @@ The engine room of OremaxPay relies on a fault-tolerant microservices architectu
 **Core Mathematical Throughput Model**
 System transaction processing efficiency `Q` modeled against network latency `L` and redundancy factor `R` follows the relation:
 
-Q = α × (1 - e^(-λL)) + βR
+`Q = α × (1 - e^(-λL)) + βR`
 
 Where `α` represents peak processing capacity (2M tx/day), `λ` represents packet loss decay, and `β` represents cloud edge fault tolerance.
 
+#### 2. Governance, Risk, and Compliance (GRC) Oversight
 
+Operating under the watchful eye of GRC frameworks requires an uncompromising approach to data architecture. OremaxPay isolates Personally Identifiable Information (PII) from transaction payloads. Customer names, National Identification Numbers (NIN), and Bank Verification Numbers (BVN) are encrypted at rest using AES-256 and stored in secure, geo-fenced vaults compliant with local data sovereignty mandates. The GRC team enforces continuous monitoring through automated compliance pipelines. Access to user data is governed by strict Role-Based Access Control (RBAC) and Zero-Trust principles, ensuring that even internal engineering teams cannot view raw customer credentials or transaction histories without multi-party authorization and audited cryptographic keys. Automated logging captures every access attempt, feeding directly into dashboards reviewed weekly by internal risk officers and external statutory auditors to satisfy both PCI-DSS standards and regulatory guidelines set by the Nigerian Data Protection Commission (NDPC).
 
+#### 3. Detailed Scoping Statement
 
+To establish clear regulatory boundaries and optimize audit resource allocation, OremaxPay defines its statutory audit and compliance boundary through explicit in-scope and out-of-scope parameters.
+
+**Operational Scope and Asset Classification**
+
+| Component / Asset | Classification | Operational Scope & Rationale |
+| :--- | :--- | :--- |
+| **Mobile Money Processing Pipeline** | `IN-SCOPE` | Encompasses the USSD gateway, NIBSS integration endpoints, mobile application backend APIs, tokenization engines, and real-time transaction routing systems handling financial flows. |
+| **User Database Servers** | `IN-SCOPE` | Cloud-hosted infrastructure housing customer PII, encrypted vaults (NIN/BVN records), ledger balances, and KYC documentation subject to NDPC and CBN data governance mandates. |
+| **Customer Support Channels** | `IN-SCOPE` | Ticketing systems, live chat databases, and call center logs that process, display, or archive customer PII, disputed transaction logs, and identity verification artifacts. |
+| **Marketing & Admin Offices** | `OUT-OF-SCOPE` | Physical office spaces in Victoria Island used solely for marketing campaigns, HR administration, or non-technical management. Excluded because they process neither cardholder data nor core system telemetry. |
 
 
 
