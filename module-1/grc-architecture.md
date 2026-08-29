@@ -9,4 +9,4 @@ The Core Architecture
 * **Compliance**: Meeting external mandates (like data protection laws) and internal policies.
 
 Where does GRC sit in an Organization?
-![GRC Architecture Diagram](./images/GRC_Architecture_drawio.svg)
+![GRC Architecture Diagram](./assets/GRC_Architecture_drawio.svg)
