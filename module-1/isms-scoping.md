@@ -81,9 +81,19 @@ To establish clear regulatory boundaries and optimize audit resource allocation,
 | **Customer Support Channels** | `IN-SCOPE` | Ticketing systems, live chat databases, and call center logs that process, display, or archive customer PII, disputed transaction logs, and identity verification artifacts. |
 | **Marketing & Admin Offices** | `OUT-OF-SCOPE` | Physical office spaces in Victoria Island used solely for marketing campaigns, HR administration, or non-technical management. Excluded because they process neither cardholder data nor core system telemetry. |
 
+#### Scoping Rationale & Boundary Justification
 
+The boundary defined above ensures that GRC audits focus intensely on assets where financial data or PII resides, transits, or is processed. Non-technical administrative environments are explicitly excluded to streamline compliance verification and maintain a laser-sharp focus on information security risk vectors.
 
+### ISO/IEC 27001:2022 Control Themes and Risk Treatment Linkage
 
+* **Organizational Controls (Clause 5)**: Encompasses policies, threat intelligence, information security roles, asset management, and supplier relationships, linking directly to the risk treatment plan by establishing governance baselines, assigning ownership for residual risks, and setting rules for third-party cloud vendors handling PII.
+
+* **People Controls (Clause 6)**: Covers screening, terms of employment, awareness training, and disciplinary processes, mapping to the risk treatment plan by mitigating internal threat vectors, human error, and social engineering risks through mandatory security vetting and continuous staff education.
+
+* **Physical Controls (Clause 7)**: Focuses on secure areas, physical entry controls, equipment security, and clear desk/screen policies, tying into the risk treatment plan by protecting localized edge servers, branch offices, and hardware assets against unauthorized physical access, theft, or environmental hazards.
+
+* **Technological Controls (Clause 8)**: Addresses access rights, secure authentication, malware protection, network security, data masking, and logging, integrating with the risk treatment plan by deploying technical safeguards like AES-256 encryption, RBAC, and automated monitoring pipelines to neutralize digital vulnerabilities in mobile money pipelines.
 
 
 
