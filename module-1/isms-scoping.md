@@ -16,11 +16,67 @@ Modern ISO management system standards (such as ISO 9001) follow a uniform High-
 * **Scope and QMS Processes**: Defines the boundaries of the system and maps out the necessary processes.
 
 #### Clause 5: Leadership
-
 * **Top Management Commitment**: Demands active leadership, accountability, and promotion of a quality or risk-aware culture.
 * **Policy**: Requires establishing, communicating, and maintaining a formal organizational policy.
 * Roles and Responsibilities**: Ensures organizational roles, responsibilities, and authorities are clearly assigned and communicated
 
 #### Clause 6: Planning
+* **Risks and Opportunities**: Implements risk-based thinking to identify potential threats and positive opportunities.
+* **Objectives**: Sets measurable goals aligned with the policy and plans actions to achieve them.
+* Planning of Changes**: Manages how changes to the management system are introduced and executed.
+
+#### Clause 7: Support
+* **Resources**: Ensures the provision of necessary infrastructure, environment, and human resources.
+* **Competence and Awareness**: Guarantees personnel are trained, competent, and aware of their impact on the system.
+* **Communication and Documented Information**: Governs internal/external communication and the control of documented information
+
+#### Clause &: Operation
+* **Operational Planning and Control**: Plans and executes core processes required to meet product or service requirements.
+* **Requirements & Design**: Manages customer requirements, external providers, design, and development.
+* **Control of Outputs**: Oversees production, service provision, and nonconforming outputs.
+
+#### Clause 9: Performance Evaluation
+* **Monitoring and Measurement**: Tracks, measures, analyzes, and evaluates system performance.
+* **Internal Audit**: Conducts scheduled internal audits to verify if the management system conforms to requirements.
+* **Management Review**: Requires top management to periodically review the effectiveness of the system
+
+#### Clause 10: Improvement
+* **Nonconformity and Corrective Action**: Reacts to nonconformities, corrects issues, and eliminates root causes.
+* **Continual Improvement**: Enhances the suitability, adequacy, and effectiveness of the management system over time
+
+### ISMS Scope for OremaxPay
+
+* Entity: **OremaxPay LTD**
+* Headquarters: **Victoria Island, Lagos**
+* Regulatory Scope: **CBN, NDPC, PCI-DSS**
+* Classification: **Confidential GRC Audit**
+
+#### 1. Executive Summary & Operational Context
+
+OremaxPay anchors its operations in the bustling heart of Victoria Island, Lagos, serving as a vital bridge between unbanked merchants in Balogun Market and digital-first consumers across Nigeria. As a mid-sized fintech licensed by the Central Bank of Nigeria (CBN), the company processes upwards of two million mobile money transactions daily while maintaining strict compliance under the Nigeria Data Protection Act (NDPA).
+
+The engine room of OremaxPay relies on a fault-tolerant microservices architecture capable of handling the erratic uptime and latency typical of West African telecommunications infrastructure. When a user initiates a transfer or merchant payment via USSD or the mobile app, the request hits a localized gateway integrated with the Nigeria Inter-Bank Settlement System (NIBSS). Transactions are tokenized instantly to prevent fraud, and settlement occurs in real-time or near-real-time across partner commercial banks. To mitigate downtime during fiber cuts or power outages on the mainland, OremaxPay utilizes a hybrid cloud model, keeping core routing logic redundant across multi-region edge servers.
+
+**Core Mathematical Throughput Model**
+System transaction processing efficiency `Q` modeled against network latency `L` and redundancy factor `R` follows the relation:
+
+Q = α × (1 - e^(-λL)) + βR
+
+Where `α` represents peak processing capacity (2M tx/day), `λ` represents packet loss decay, and `β` represents cloud edge fault tolerance.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
