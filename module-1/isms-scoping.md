@@ -9,3 +9,11 @@ ISO/IEC 27001 is not a rigid checklist; it is a management tool governed by the 
 ### ISO/IEC 27001 Core Clauses
 
 Modern ISO management system standards (such as ISO 9001) follow a uniform High-Level Structure (HLS) based on Annex SL, where Clauses 4 through 10 form the core, auditable requirements structured around the Plan-Do-Check-Act (PDCA) cycle.
+
+#### Clause 4: Context of the Organization
+
+* **Operating Environment**: Requires determining internal and external issues (such as via SWOT or PESTLE analysis) that impact the management system's intended results.
+* **Interested Parties**: Identifies the needs and expectations of relevant stakeholders, including customers and regulators.
+* **Scope and QMS Processes**: Defines the boundaries of the system and maps out the necessary processes.
+
+#### 
