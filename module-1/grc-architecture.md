@@ -8,3 +8,5 @@ The Core Architecture
 * **Risk Management**: Identifying, assessing, and mitigating threats (e.g., operational, financial, or cyber risks).
 * **Compliance**: Meeting external mandates (like data protection laws) and internal policies.
 
+Where does GRC sit in an Organization?
+![GRC Architecture Diagram](./images/grc-architecture.png)
